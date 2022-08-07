@@ -1,0 +1,9 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="../src/cordiccart2pol.cpp:46:5" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by r" ID="bb2.store.5" VarName="r"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="../src/cordiccart2pol.cpp:47:9" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by theta" ID="bb2.store.6" VarName="theta"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="../src/cordiccart2pol.cpp:41:27" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb1.load.15" VarName="Kvalues"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="../src/cordiccart2pol.cpp:43:21" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb1.load.24" VarName="angles"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="../src/cordiccart2pol.cpp:41:27" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb1.load.15" VarName="Kvalues"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="../src/cordiccart2pol.cpp:43:21" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb1.load.24" VarName="angles"/>
+</VitisHLS:BurstInfo>
+

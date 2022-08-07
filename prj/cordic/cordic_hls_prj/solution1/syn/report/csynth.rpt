@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cordiccart2pol'
+================================================================
++ General Information: 
+    * Date:           Sun Aug  7 09:46:09 2022
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        cordic_hls_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |       Modules      | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |         |           |           |     |
+    |       & Loops      | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ cordiccart2pol    |     -|  -0.04|      254|  2.540e+03|         -|      255|     -|        no|     -|  21 (9%)|  1806 (1%)|  2937 (5%)|    -|
+    | o VITIS_LOOP_33_1  |    II|  -7.30|      240|  2.400e+03|        15|       15|    16|       yes|     -|        -|          -|          -|    -|
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+

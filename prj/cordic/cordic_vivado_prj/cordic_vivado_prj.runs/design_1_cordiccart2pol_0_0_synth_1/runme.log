@@ -1,0 +1,425 @@
+
+*** Running vivado
+    with args -log design_1_cordiccart2pol_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cordiccart2pol_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_cordiccart2pol_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.cache/ip 
+Command: synth_design -top design_1_cordiccart2pol_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1352
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1008.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_cordiccart2pol_0_0' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ip/design_1_cordiccart2pol_0_0/synth/design_1_cordiccart2pol_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 29'b00000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 29'b00000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 29'b00000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 29'b00000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 29'b00000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 29'b00000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 29'b00000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 29'b00000000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 29'b00000000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 29'b00000000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 29'b00000000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 29'b00000000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 29'b00000000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 29'b00000000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 29'b00000000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 29'b00000000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 29'b00000000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 29'b00000000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 29'b00000000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 29'b00000000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 29'b00000000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 29'b00000001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 29'b00000010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 29'b00000100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 29'b00001000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 29'b00010000000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 29'b00100000000000000000000000000 
+	Parameter ap_ST_fsm_state28 bound to: 29'b01000000000000000000000000000 
+	Parameter ap_ST_fsm_state29 bound to: 29'b10000000000000000000000000000 
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_Kvalues' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_Kvalues.v:39]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_Kvalues_rom' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_Kvalues.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './cordiccart2pol_Kvalues_rom.dat' is read successfully [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_Kvalues.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_Kvalues_rom' (1#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_Kvalues.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_Kvalues' (2#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_Kvalues.v:39]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_angles' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_angles.v:39]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_angles_rom' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_angles.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './cordiccart2pol_angles_rom.dat' is read successfully [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_angles.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_angles_rom' (3#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_angles.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_angles' (4#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_angles.v:39]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_control_s_axi' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_X_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_X_CTRL bound to: 6'b010100 
+	Parameter ADDR_Y_DATA_0 bound to: 6'b011000 
+	Parameter ADDR_Y_CTRL bound to: 6'b011100 
+	Parameter ADDR_R_DATA_0 bound to: 6'b100000 
+	Parameter ADDR_R_CTRL bound to: 6'b100100 
+	Parameter ADDR_THETA_DATA_0 bound to: 6'b110000 
+	Parameter ADDR_THETA_CTRL bound to: 6'b110100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_control_s_axi.v:190]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_control_s_axi' (5#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_faddfsub_32ns_32ns_32_5_full_dsp_1' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_faddfsub_32ns_32ns_32_5_full_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_ap_faddfsub_3_full_dsp_32' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_faddfsub_3_full_dsp_32.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [E:/FPGATOOL/Xilinx2020/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (6#1) [E:/FPGATOOL/Xilinx2020/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_ap_faddfsub_3_full_dsp_32' (25#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_faddfsub_3_full_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_faddfsub_32ns_32ns_32_5_full_dsp_1' (26#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_faddfsub_32ns_32ns_32_5_full_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_fadd_32ns_32ns_32_5_full_dsp_1' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fadd_32ns_32ns_32_5_full_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_ap_fadd_3_full_dsp_32' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fadd_3_full_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_ap_fadd_3_full_dsp_32' (27#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fadd_3_full_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_fadd_32ns_32ns_32_5_full_dsp_1' (28#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fadd_32ns_32ns_32_5_full_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_ap_fmul_2_max_dsp_32' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fmul_2_max_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_ap_fmul_2_max_dsp_32' (36#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fmul_2_max_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1' (37#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_fptrunc_64ns_32_2_no_dsp_1' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fptrunc_64ns_32_2_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_ap_fptrunc_0_no_dsp_64' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fptrunc_0_no_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_ap_fptrunc_0_no_dsp_64' (43#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fptrunc_0_no_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_fptrunc_64ns_32_2_no_dsp_1' (44#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fptrunc_64ns_32_2_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fpext_32ns_64_2_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_ap_fpext_0_no_dsp_32' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fpext_0_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_ap_fpext_0_no_dsp_32' (45#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fpext_0_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1' (46#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fpext_32ns_64_2_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_fcmp_32ns_32ns_1_2_no_dsp_1' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fcmp_32ns_32ns_1_2_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+	Parameter AP_OEQ bound to: 5'b00001 
+	Parameter AP_OGT bound to: 5'b00010 
+	Parameter AP_OGE bound to: 5'b00011 
+	Parameter AP_OLT bound to: 5'b00100 
+	Parameter AP_OLE bound to: 5'b00101 
+	Parameter AP_ONE bound to: 5'b00110 
+	Parameter AP_UNO bound to: 5'b01000 
+	Parameter OP_EQ bound to: 8'b00010100 
+	Parameter OP_GT bound to: 8'b00100100 
+	Parameter OP_GE bound to: 8'b00110100 
+	Parameter OP_LT bound to: 8'b00001100 
+	Parameter OP_LE bound to: 8'b00011100 
+	Parameter OP_NE bound to: 8'b00101100 
+	Parameter OP_UO bound to: 8'b00000100 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_ap_fcmp_0_no_dsp_32' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fcmp_0_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_ap_fcmp_0_no_dsp_32' (49#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_fcmp_0_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_fcmp_32ns_32ns_1_2_no_dsp_1' (50#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_fcmp_32ns_32ns_1_2_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_dmul_64ns_64ns_64_7_max_dsp_1' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_dmul_64ns_64ns_64_7_max_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_ap_dmul_5_max_dsp_64' [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_dmul_5_max_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_ap_dmul_5_max_dsp_64' (52#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/ip/cordiccart2pol_ap_dmul_5_max_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_dmul_64ns_64ns_64_7_max_dsp_1' (53#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol_dmul_64ns_64ns_64_7_max_dsp_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol' (54#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ipshared/4dc7/hdl/verilog/cordiccart2pol.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cordiccart2pol_0_0' (55#1) [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ip/design_1_cordiccart2pol_0_0/synth/design_1_cordiccart2pol_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1136.125 ; gain = 128.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1136.125 ; gain = 128.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1136.125 ; gain = 128.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.376 . Memory (MB): peak = 1136.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 469 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ip/design_1_cordiccart2pol_0_0/constraints/cordiccart2pol_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.gen/sources_1/bd/design_1/ip/design_1_cordiccart2pol_0_0/constraints/cordiccart2pol_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.runs/design_1_cordiccart2pol_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.runs/design_1_cordiccart2pol_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1136.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDE => FDRE: 6 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1138.191 ; gain = 2.066
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1138.191 ; gain = 130.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1138.191 ; gain = 130.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.runs/design_1_cordiccart2pol_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1138.191 ; gain = 130.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'cordiccart2pol_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'cordiccart2pol_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'cordiccart2pol_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'cordiccart2pol_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1138.191 ; gain = 130.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U2/cordiccart2pol_ap_fadd_3_full_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U2/cordiccart2pol_ap_fadd_3_full_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U2/cordiccart2pol_ap_fadd_3_full_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U2/cordiccart2pol_ap_fadd_3_full_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1:/cordiccart2pol_ap_fmul_2_max_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1:/cordiccart2pol_ap_fmul_2_max_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1:/cordiccart2pol_ap_fmul_2_max_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1:/cordiccart2pol_ap_fmul_2_max_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fptrunc_64ns_32_2_no_dsp_1_U5/cordiccart2pol_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fpext_32ns_64_2_no_dsp_1_U6/cordiccart2pol_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fpext_32ns_64_2_no_dsp_1_U6/cordiccart2pol_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/fpext_32ns_64_2_no_dsp_1_U6/cordiccart2pol_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fpext_32ns_64_2_no_dsp_1_U6/cordiccart2pol_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fpext_32ns_64_2_no_dsp_1_U6/cordiccart2pol_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fpext_32ns_64_2_no_dsp_1_U6/cordiccart2pol_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U7/cordiccart2pol_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U7/cordiccart2pol_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U7/cordiccart2pol_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U7/cordiccart2pol_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U7/cordiccart2pol_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U7/cordiccart2pol_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U7/cordiccart2pol_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U7/cordiccart2pol_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U8/cordiccart2pol_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U8/cordiccart2pol_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U8/cordiccart2pol_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U8/cordiccart2pol_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1138.191 ; gain = 130.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1184.387 ; gain = 176.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1213.406 ; gain = 205.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1226.160 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 1226.160 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 1226.160 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1226.160 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1226.160 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1226.160 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1226.160 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     6|
+|2     |DSP48E1 |    21|
+|16    |LUT1    |    28|
+|17    |LUT2    |   130|
+|18    |LUT3    |   494|
+|19    |LUT4    |   230|
+|20    |LUT5    |   187|
+|21    |LUT6    |   267|
+|22    |MUXCY   |   296|
+|23    |SRL16E  |    18|
+|24    |XORCY   |   126|
+|25    |FDE     |     6|
+|26    |FDRE    |  1493|
+|27    |FDSE    |    41|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1226.160 ; gain = 218.102
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:07 . Memory (MB): peak = 1226.160 ; gain = 216.035
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1226.160 ; gain = 218.102
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 1226.160 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 455 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1232.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 88 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 82 instances
+  FDE => FDRE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 1232.617 ; gain = 224.559
+INFO: [Common 17-1381] The checkpoint 'C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.runs/design_1_cordiccart2pol_0_0_synth_1/design_1_cordiccart2pol_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_cordiccart2pol_0_0, cache-ID = bf151731d4dbeca9
+INFO: [Coretcl 2-1174] Renamed 311 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_vivado_prj/cordic_vivado_prj.runs/design_1_cordiccart2pol_0_0_synth_1/design_1_cordiccart2pol_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_cordiccart2pol_0_0_utilization_synth.rpt -pb design_1_cordiccart2pol_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  7 09:54:43 2022...

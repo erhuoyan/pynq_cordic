@@ -1,0 +1,686 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "E:/FPGATOOL/Xilinx2020/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling cordiccart2pol_test.cpp_pre.cpp.tb.cpp
+   Compiling cordiccart2pol.cpp_pre.cpp.tb.cpp
+   Compiling apatb_cordiccart2pol.cpp
+   Compiling apatb_cordiccart2pol_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+---Testing results----------------------------------
+Test: x=0.8147, y=0.1269, golden theta=0.1545, golden r=0.8245, your theta=0.1545, your r=0.8242
+Test: x=0.6323, y=-0.2785, golden theta=-0.4149, golden r=0.6909, your theta=-0.4149, your r=0.6906
+Test: x=-0.5469, y=-0.9575, golden theta=-2.0898, golden r=1.1027, your theta=-2.0898, your r=1.1022
+Test: x=-0.4854, y=0.7003, golden theta=2.1769, golden r=0.8521, your theta=2.1769, your r=0.8517
+---RMS error----------------------------------
+----------------------------------------------
+   RMSE(R)           RMSE(Theta)
+0.000366585241864 0.000016664818759
+----------------------------------------------
+
+C:\GY\Works\ZYNQ\SummerSchool2022\pynq_cordic\project\cordic_hls_prj\solution1\sim\verilog>set PATH= 
+
+C:\GY\Works\ZYNQ\SummerSchool2022\pynq_cordic\project\cordic_hls_prj\solution1\sim\verilog>call E:/FPGATOOL/Xilinx2020/Vivado/2020.2/bin/xelab xil_defaultlib.apatb_cordiccart2pol_top glbl -prj cordiccart2pol.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib "ieee_proposed=./ieee_proposed" -s cordiccart2pol  
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_cordiccart2pol_top glbl -prj cordiccart2pol.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s cordiccart2pol 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/ip/xil_defaultlib/cordiccart2pol_ap_dmul_5_max_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_ap_dmul_5_max_dsp_64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/ip/xil_defaultlib/cordiccart2pol_ap_faddfsub_3_full_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_ap_faddfsub_3_full_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/ip/xil_defaultlib/cordiccart2pol_ap_fadd_3_full_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_ap_fadd_3_full_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/ip/xil_defaultlib/cordiccart2pol_ap_fcmp_0_no_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_ap_fcmp_0_no_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/ip/xil_defaultlib/cordiccart2pol_ap_fmul_2_max_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_ap_fmul_2_max_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/ip/xil_defaultlib/cordiccart2pol_ap_fpext_0_no_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_ap_fpext_0_no_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/ip/xil_defaultlib/cordiccart2pol_ap_fptrunc_0_no_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_ap_fptrunc_0_no_dsp_64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_cordiccart2pol_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_angles.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_angles_rom
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_angles
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_dmul_64ns_64ns_64_7_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_dmul_64ns_64ns_64_7_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_faddfsub_32ns_32ns_32_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_faddfsub_32ns_32ns_32_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_fadd_32ns_32ns_32_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_fadd_32ns_32ns_32_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_fmul_32ns_32ns_32_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_fptrunc_64ns_32_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_fptrunc_64ns_32_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol_Kvalues.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_Kvalues_rom
+INFO: [VRFC 10-311] analyzing module cordiccart2pol_Kvalues
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_exp_table...
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_pkg
+Compiling package floating_point_v7_1_11.flt_utils
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.cordiccart2pol_Kvalues_rom
+Compiling module xil_defaultlib.cordiccart2pol_Kvalues(DataWidth...
+Compiling module xil_defaultlib.cordiccart2pol_angles_rom
+Compiling module xil_defaultlib.cordiccart2pol_angles(DataWidth=...
+Compiling module xil_defaultlib.cordiccart2pol_control_s_axi
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=24,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=16,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=24,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xc7z020...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_11.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=5,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=3,length=0)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_11.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare [\compare(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_add [\flt_add(c_xdevicefamily="zynq",...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.cordiccart2pol_ap_faddfsub_3_ful...
+Compiling module xil_defaultlib.cordiccart2pol_faddfsub_32ns_32n...
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_add [\flt_add(c_xdevicefamily="zynq",...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.cordiccart2pol_ap_fadd_3_full_ds...
+Compiling module xil_defaultlib.cordiccart2pol_fadd_32ns_32ns_32...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_11.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.fix_mult [\fix_mult(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_11.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult [\flt_mult(c_xdevicefamily="zynq"...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.cordiccart2pol_ap_fmul_2_max_dsp...
+Compiling module xil_defaultlib.cordiccart2pol_fmul_32ns_32ns_32...
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(a_w=64,a_fw=53,o...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(a_w=64,a_ew...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.cordiccart2pol_ap_fptrunc_0_no_d...
+Compiling module xil_defaultlib.cordiccart2pol_fptrunc_64ns_32_2...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=23,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.cordiccart2pol_ap_fpext_0_no_dsp...
+Compiling module xil_defaultlib.cordiccart2pol_fpext_32ns_64_2_n...
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_11.fp_cmp [\fp_cmp(c_xdevicefamily="zynq",c...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.cordiccart2pol_ap_fcmp_0_no_dsp_...
+Compiling module xil_defaultlib.cordiccart2pol_fcmp_32ns_32ns_1_...
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,b_...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=19,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,a_...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_11.fix_mult_dsp48e1_dbl [\fix_mult_dsp48e1_dbl(mult_usage...]
+Compiling architecture rtl of entity floating_point_v7_1_11.fix_mult [\fix_mult(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=11,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,length=4,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=4,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,length=4,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=11,length=3)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=11)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(b_width=18,c_wi...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=28)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=29)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=54,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult [\flt_mult(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.cordiccart2pol_ap_dmul_5_max_dsp...
+Compiling module xil_defaultlib.cordiccart2pol_dmul_64ns_64ns_64...
+Compiling module xil_defaultlib.cordiccart2pol
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_cordiccart2pol_top
+Compiling module work.glbl
+Built simulation snapshot cordiccart2pol
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/xsim.dir/cordiccart2pol/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Aug  7 09:44:55 2022...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/cordiccart2pol/xsim_script.tcl
+# xsim {cordiccart2pol} -autoloadwcfg -tclbatch {cordiccart2pol.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source cordiccart2pol.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 4 [0.00%] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 415 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 565 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 715 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 865 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1015 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1165 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1315 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1465 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1615 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1765 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1915 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1945 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2065 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2095 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2215 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2245 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2365 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2395 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2515 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2545 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2665 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2695 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 4 [9.84%] @ "3095000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3375 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3405 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3525 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3555 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3675 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3705 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3825 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3855 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3975 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4005 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4125 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4155 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4275 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4305 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4425 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4455 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4575 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4605 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4725 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4755 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4875 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4905 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5025 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5055 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5175 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5205 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5325 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5355 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5475 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5505 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5625 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5655 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 2 / 4 [9.45%] @ "6045000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6335 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6365 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6515 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6635 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6665 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6785 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6815 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6935 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6965 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7085 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7115 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7235 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7265 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7385 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7415 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7535 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7565 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7685 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7715 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7835 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7865 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7985 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8015 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8135 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8165 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8285 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8315 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8435 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8465 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8585 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8615 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 3 / 4 [9.45%] @ "9005000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9295 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9325 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9445 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9475 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9595 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9625 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9745 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9775 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9895 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9925 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10045 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10075 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10195 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10225 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10345 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10375 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10495 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10525 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10645 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10675 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10795 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10825 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10945 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10975 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11095 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11125 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11245 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11275 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11395 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11425 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11545 ns  Iteration: 11  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11575 ns  Iteration: 13  Process: /apatb_cordiccart2pol_top/AESL_inst_cordiccart2pol/faddfsub_32ns_32ns_32_5_full_dsp_1_U1/cordiccart2pol_ap_faddfsub_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/FPGATOOL/Xilinx2020/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 4 / 4 [100.00%] @ "11965000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 12005 ns : File "C:/GY/Works/ZYNQ/SummerSchool2022/pynq_cordic/project/cordic_hls_prj/solution1/sim/verilog/cordiccart2pol.autotb.v" Line 346
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Aug  7 09:45:03 2022...
+---Testing results----------------------------------
+Test: x=0.8147, y=0.1269, golden theta=0.1545, golden r=0.8245, your theta=0.1545, your r=0.8242
+Test: x=0.6323, y=-0.2785, golden theta=-0.4149, golden r=0.6909, your theta=-0.4149, your r=0.6906
+Test: x=-0.5469, y=-0.9575, golden theta=-2.0898, golden r=1.1027, your theta=-2.0898, your r=1.1022
+Test: x=-0.4854, y=0.7003, golden theta=2.1769, golden r=0.8521, your theta=2.1769, your r=0.8517
+---RMS error----------------------------------
+----------------------------------------------
+   RMSE(R)           RMSE(Theta)
+0.000366585241864 0.000016664818759
+----------------------------------------------
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

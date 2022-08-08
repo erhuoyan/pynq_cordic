@@ -1,7 +1,0 @@
-Running: xsim.dir/cordiccart2pol/xsimk.exe -simmode gui -wdb cordiccart2pol.wdb -simrunnum 0 -socket 13318
-Design successfully loaded
-Design Loading Memory Usage: 12132 KB (Peak: 12132 KB)
-Design Loading CPU Usage: 46 ms
-Simulation completed
-Simulation Memory Usage: 15760 KB (Peak: 15760 KB)
-Simulation CPU Usage: 390 ms
